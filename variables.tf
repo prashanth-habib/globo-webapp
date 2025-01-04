@@ -37,6 +37,7 @@ variable "api_key" {
   description = "(Required) API key for web app to talk to SaaS platform."
 }
 
+<<<<<<< HEAD
 variable "public_subnets" {
   type        = list(string)
   description = "(Required) List of subnet IDs for EC2 instance deployments."
@@ -48,3 +49,14 @@ variable "vpc_id" {
 }
 
 
+=======
+variable "tfe_organization" {
+  type        = string
+  description = "(Required) Name of TFC organization."
+}
+
+variable "tfe_workspace_name" {
+  type        = string
+  description = "(Required) Name of networking workspace to get information."
+}
+>>>>>>> 67544fc (Added tfe outputs)
