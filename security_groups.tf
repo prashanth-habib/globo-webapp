@@ -20,11 +20,7 @@ resource "aws_security_group" "webapp_http_inbound_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-<<<<<<< HEAD
-  vpc_id = var.vpc_id
-=======
   vpc_id = data.tfe_outputs.networking.nonsensitive_values.vpc_id
->>>>>>> 67544fc (Added tfe outputs)
 
   tags = local.common_tags
 }
@@ -40,11 +36,7 @@ resource "aws_security_group" "webapp_ssh_inbound_sg" {
     cidr_blocks = [var.ip_range]
   }
 
-<<<<<<< HEAD
-  vpc_id = var.vpc_id
-=======
   vpc_id = data.tfe_outputs.networking.nonsensitive_values.vpc_id
->>>>>>> 67544fc (Added tfe outputs)
 
   tags = local.common_tags
 }
@@ -60,11 +52,7 @@ resource "aws_security_group" "webapp_outbound_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-<<<<<<< HEAD
-  vpc_id = var.vpc_id
-=======
   vpc_id = data.tfe_outputs.networking.nonsensitive_values.vpc_id
->>>>>>> 67544fc (Added tfe outputs)
 
   tags = local.common_tags
 }
